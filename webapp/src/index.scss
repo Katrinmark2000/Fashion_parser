@@ -1,0 +1,169 @@
+:root {
+  --background-color: #fdf2f8;
+  --accent-color: #ec4899;
+  --hover-color: #f3e8ff;
+  --tag-color: #fce7f3;
+  --font-weight-bold: 700;
+  --font-weight-normal: 500;
+  --accent-foreground: #7c2d92;
+  --text-color: #831843;
+  --third-text-color: #9d174d;
+  --border-color: #ec489933;
+  --second-text-color: #be185d;
+  --font-family-base: ui-sans-serif, system-ui, sans-serif;
+  --line-height-base: 1.4;
+}
+
+/* Отключаем браузерные дефолтные стили для всех элементов */
+
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	font-size: 100%;
+	line-height: var(--line-height-base);
+	vertical-align: baseline;
+	border: 0;
+  background-color: var(--background-color);
+
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h2 {
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  display: flex;
+
+   //градиент
+   background: linear-gradient(90deg, #7c2d92, #ec4899);
+   background-clip: text;
+   color: transparent; 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}

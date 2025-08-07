@@ -1,0 +1,38 @@
+.container {
+    padding-top: 60px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.text {
+    font-size: 18px;
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.articleText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 540px;
+    gap: 30px;
+    text-align: center;
+}
+
+.cardsDeveloperContainer {
+    display: flex;
+    gap: 30px;
+    
+}

@@ -1,0 +1,21 @@
+.tagSection {
+    color: var(--second-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 7px 14px;
+    font-family: var(--font-family-base);
+    width: fit-content;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.pink {
+    background-color: var(--tag-color);
+}
+
+.purple {
+    background-color: var(--hover-color);
+}

@@ -1,0 +1,33 @@
+.button {
+    padding: 10px 13px;
+	font-weight: var(--font-weight-normal);
+	font-size: 16px;
+    border: 1px solid pink;
+    background-color: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.primary {
+background-color: var(--background-color);
+color: var(--text-color);
+transition: all 0.3s ease;
+
+&:hover {
+    color: var(--accent-foreground);
+    background-color: var(--hover-color)}
+}
+
+.shaded {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: color-mix(in oklab, var(--accent-color) 90%, transparent);}
+}

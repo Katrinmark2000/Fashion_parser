@@ -1,0 +1,72 @@
+  .header {
+    position: sticky;
+    font-family: var(--font-family-base);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fce7f3;
+    height: 56px;
+    top: 0;
+    z-index: 100;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    
+
+    &.blur {
+      backdrop-filter: blur(10px);
+    }
+
+  }
+
+ .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: var(--font-weight-bold);
+
+  //Градиент для текста лого
+  background: linear-gradient(90deg, #7c2d92, #ec4899);
+  background-clip: text;
+  color: transparent; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .imageLogo {
+position: relative;
+ }
+
+ .imageLogoSparkle {
+  position: absolute;
+  top: 9px;
+  left: 13px;
+ }
+
+ .navList {
+  display: flex;
+  gap: 20px;
+  
+ }
+
+ .navLink {
+  text-decoration: none;
+  color: var(--text-color);
+  line-height: var(--line-height-base);
+  font-size: 14px;
+
+  &:hover {
+    color: var( --accent-color);
+  }
+ }
+
+ .nav {
+  display: flex;
+gap: 40px;
+align-items: center;
+justify-content: center;
+ }
+
+.button {
+  font-weight: var(--font-weight-normal);
+}
