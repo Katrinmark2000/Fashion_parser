@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+# Fashion Articles Parser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Fashion Articles Parser** — это современное веб-приложение для автоматического парсинга и отображения новостей из ведущих журналов.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Проект создаётся в коллаборации:  
+- **Frontend** — React, TypeScript, Redux Toolkit, SCSS, Vite (моя зона ответсвенности)
+- **Backend** — Go, Docker, PostgreSQL (разработка моей коллегой)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Я отвечаю за **полную разработку фронтенда**: от архитектуры компонентов и работы с состоянием до интеграции с бэкендом и оптимизации пользовательского опыта.
+ 
+Моя задача — превратить поток данных с сервера в удобный, быстрый и визуально привлекательный интерфейс.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
+## Технологии
+- **React**
+- **TypeScript**
+- **Redux Toolkit**
+- **SCSS Modules**
+- **fetch API** (axios в планах)
+- *(планируется)* **Storybook** и **Jest**
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Текущий функционал
+- Постепенная подгрузка и отображение статей с сервера.
+- Кнопка **"Открыть больше"** и **"Закрыть"** с сохранением состояния.
+- Обработка отсутствия изображений (показ заглушки).
+- Плавный скролл при сворачивании.
+- Навигация по контенту в хедере.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Планируемые улучшения
+- Фильтрация по названию журнала.
+- Сортировка по дате новости.
+- Создание личного кабинета.
+- Авторизация и регистрация пользователей.
+- Добавление статей в избранное.
+- Внедрение **Storybook** для документирования UI-компонентов.
+- Написание тестов на **Jest**.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Ключевые достижения:**
+
+Помимо описанного функционала,
+- Разработала модульную структуру с переиспользуемыми UI-компонентами и утилитами.
+- Использовала **TypeScript** для типобезопасности и уменьшения количества ошибок на этапе разработки.
+- Организовала масштабируемый проект на **React** с **Redux Toolkit**.
+- Настроила проект на **Vite** для быстрой сборки.
+
+---
+
+*Проект в активной разработке*
