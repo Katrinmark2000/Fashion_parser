@@ -1,5 +1,5 @@
 import { DeveloperCard } from "../../shared/ui/developerCard/developerCard";
-import { TagNewSections } from "../../shared/ui/tagNewSection/tagNewSection";
+import { TagNewSections } from "../../shared/ui/tag/tag";
 import styles from './developerSection.module.scss'
 import { FaCode } from "react-icons/fa6";
 import photoNastya from '../../assets/images/photoNastya.jpg'

@@ -1,6 +1,6 @@
 import styles from './home.module.scss';
 import {Button} from '../../shared/ui/button/button'
-import { TagNewSections } from '../../shared/ui/tagNewSection/tagNewSection';
+import { TagNewSections } from '../../shared/ui/tag/tag';
 import { PiSparkle } from "react-icons/pi";
 import { BsLightningCharge } from "react-icons/bs";
 import { CardHome } from '../../shared/ui/cardHome/cardHome';

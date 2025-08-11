@@ -1,6 +1,6 @@
 import type { TDeveloperCard } from "./type"
 import styles from './developerCard.module.scss'
-import { TagNewSections } from "../tagNewSection/tagNewSection"
+import { TagNewSections } from "../tag/tag"
 import { VscGithubAlt } from "react-icons/vsc";
 import { PiTelegramLogo } from "react-icons/pi";
 

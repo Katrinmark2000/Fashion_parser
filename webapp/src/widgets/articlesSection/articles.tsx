@@ -1,11 +1,11 @@
 import { ArticleCard } from "../../shared/ui/articleCard/articleCard";
 import { Button } from "../../shared/ui/button/button";
-import { TagNewSections } from "../../shared/ui/tagNewSection/tagNewSection";
+import { TagNewSections } from "../../shared/ui/tag/tag";
 import styles from './articles.module.scss'
 import { LuExternalLink } from "react-icons/lu";
 import { useEffect, useState, useRef } from 'react';
 import { useDispatch, useSelector, type RootState } from '../../store';
-import { fetchArticle } from '../../slice/articleSlice';
+import { fetchArticle } from '../../entities/slice/articleSlice';
 import { formatDate } from "../../shared/utils/formatData";
 import { stripHtml } from "../../shared/utils/stripHtml";
 

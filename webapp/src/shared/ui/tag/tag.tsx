@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import styles from './tagNewSection.module.scss'
+import styles from './tag.module.scss'
 import clsx from 'clsx';
 
 type TTagNewSections = {

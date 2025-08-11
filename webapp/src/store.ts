@@ -4,7 +4,7 @@ import {
   useDispatch as dispatchHook,
   useSelector as selectorHook
 } from 'react-redux';
-import { articleSlice } from './slice/articleSlice';
+import { articleSlice } from './entities/slice/articleSlice';
 
 const rootReducer = {
   article: articleSlice.reducer,  // ключ здесь — (новости)
