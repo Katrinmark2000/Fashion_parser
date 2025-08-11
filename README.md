@@ -16,6 +16,7 @@
 
 ---
 ## Технологии
+- **FSD (Feature-Sliced Design)**
 - **React**
 - **TypeScript**
 - **Redux Toolkit**
