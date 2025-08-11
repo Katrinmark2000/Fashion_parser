@@ -4,8 +4,8 @@ import {Button} from '../button/button'
 import { getDomainName } from "../../../features/getDomainName/getDomainName";
 import { CiCalendar } from "react-icons/ci";
 import { LuExternalLink } from "react-icons/lu";
-
-
+import { useState } from "react";
+import myPlaceholder from '../../../assets/images/plugPhoto.jpg'
 
 export const ArticleCard = ({
     articleImage,
@@ -15,11 +15,12 @@ export const ArticleCard = ({
     articlePublicationTime,
 }: TArticleCard) => {
     const domain = getDomainName(articleLink)
+    const [imgSrc, setImgSrc] = useState(articleImage);
 
     return (
    <div className={styles.container}>
     <div className={styles.imageWrapper}>
-    <img src={articleImage} className={styles.image}/>
+    <img src={imgSrc} className={styles.image} onError={() => setImgSrc(myPlaceholder)}/>
     </div>
     <div className={styles.textBlock}>
 <div className={styles.headerArticle}>
@@ -33,7 +34,7 @@ export const ArticleCard = ({
 <p className={styles.text}>{articleDescription}</p>
 <a href={articleLink} target="_blank" className={styles.source}>
 <Button color={"primary"} className={styles.buttonArticle}>
-    Read More
+    Открыть
 <LuExternalLink size='15px' style={{paddingLeft: 6}}/>
 </Button>
 </a>

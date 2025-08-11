@@ -12,11 +12,11 @@ export const DeveloperSection = ({}) => {
       <section id="developers" className={styles.container}>
       <TagNewSections color={"purple"}>
         <FaCode size='15px' style={{paddingRight: 3}}/>
-      Meet Our Team
+      Встречайте наших разработчиков
       </TagNewSections>
       <div className={styles.articleText}>
-      <h2 className={styles.title}>The Developers Behind FashionParser</h2>
-      <p className={styles.text}>Our parser continuously scans top fashion magazines to bring you the most relevant and trending content.</p>
+      <h2 className={styles.title}>Разработчики Новостного Портала</h2>
+      <p className={styles.text}>Наши разработчики позаботились о вас и сделали агрегатор новостей о модном мире, чтобы вы могли насалдиться последними новостями в фэшн индустрии.</p>
       </div>
       <div className={styles.cardsDeveloperContainer}>
       <DeveloperCard 
@@ -24,15 +24,15 @@ export const DeveloperSection = ({}) => {
       nameDeveloper={'Анастасия Прибылова'} 
       jobTitle={'Backend Developer'} 
       description={"Разработала эффективный парсер для сбора и структурирования информации из различных источников, с акцентом на производительность и надежность."} 
-      skills={[ 'Go', 'Docker', 'Postgress', 'что-то еще']} 
+      skills={[ 'Go', 'Docker', 'PostgreSQL']} 
       linkGitHub={'https://github.com/pribylovaa'} 
       linkTg={"https://t.me/a_pribylova"}/>
       <DeveloperCard 
-      photo={photoCatherine} 
-      nameDeveloper={'Катрин Маркова'} 
+      photo={photoCatherine}
+      nameDeveloper={'Катрин Маркова'}
       jobTitle={'Frontend Developer'} 
       description={"Разработала интерфейс и реализовала клиентскую логику для парсера, включая вёрстку и обработку данных на фронтенде."} 
-      skills={[ 'TypeScript', 'React', 'Redux', 'SCSS module', 'Ject', 'Storybook']} 
+      skills={[ 'TypeScript', 'React', 'Redux', 'SCSS module']} 
       linkGitHub={'https://github.com/katrinmark2000'} 
       linkTg={"https://t.me/mkkkash"}/>
       </div>

@@ -14,25 +14,24 @@ export const Home = () => {
     <section id="home" className={styles.container}>
     <TagNewSections color={'pink'}>
         <PiSparkle size='15px' style={{paddingRight: 3}}/>
-    Lets talk about fashion
+    Поговорим о моде?
     </TagNewSections>
     <div className={styles.homeText}>
-    <h1 className={styles.title}>Fashion Magazine
-    Article Parser</h1>
-    <p className={styles.text}>Discover the latest fashion trends, beauty tips, and style inspiration from top fashion magazines around the world, all in one beautiful place.</p>
+    <h1 className={styles.title}>Ваш Портал Новостей о Модном Мире</h1>
+    <p className={styles.text}>Откройте для себя новейшие модные тенденции, советы по красоте и идеи стиля из ведущих модных журналов со всего мира — все в одном прекрасном месте.</p>
     </div>
     <div className={styles.cards}>
         <CardHome 
-        title={'Real-time Parsing'} 
-        text={'Continuously scans fashion websites for the latest articles and trends'}
+        title={'Анализ в реальном времени'} 
+        text={'Постоянно сканирует сайты о моде на предмет последних статей и тенденций.'}
         icon={<FaArrowTrendUp size='21px' color='#ec4899' className={styles.icon} />}/>
           <CardHome 
-        title={'Beautiful Interface'} 
-        text={'Elegant, responsive design that makes browsing fashion content a pleasure'}
+        title={'Красивый интерфейс'} 
+        text={'Элегантный дизайн, превращающий просмотр модного контента в удовольствие'}
         icon={<PiSparkle size='21px' color='#ec4899' className={styles.icon} />}/>
           <CardHome 
-        title={'Link to source'} 
-        text={'For your convenience, we leave a link so that you can follow it to the source'}
+        title={'Ссылка на источник'} 
+        text={'Для вашего удобства мы оставляем ссылку, по которой вы можете перейти к первоисточнику.'}
         icon={<FaArrowTrendUp size='21px' color='#ec4899' className={styles.icon} />}/>
     </div>
     </section>
