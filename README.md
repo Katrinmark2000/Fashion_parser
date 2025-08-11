@@ -22,6 +22,9 @@
 - **SCSS Modules**
 - **fetch API** (axios в планах)
 - *(планируется)* **Storybook** и **Jest**
+
+## Архитектурная методология
+- **FSD (Feature-Sliced Design)**
 ---
 
 ## Текущий функционал
