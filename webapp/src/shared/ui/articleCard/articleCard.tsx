@@ -24,9 +24,9 @@ export const ArticleCard = ({
     </div>
     <div className={styles.textBlock}>
 <div className={styles.headerArticle}>
-<a href={articleLink} target="_blank" className={styles.source}>
+    <p className={styles.magazine}>
       {domain}
-    </a>
+    </p>
     <CiCalendar size='10px' color="#9d174d" style={{paddingRight: 6}}/>
     <div className={styles.data}>{articlePublicationTime}</div>
 </div>
@@ -35,9 +35,10 @@ export const ArticleCard = ({
 </div>
 
 <Button color={"primary"} className={styles.buttonArticle}>
+<a href={articleLink} target="_blank" className={styles.source}>
     Открыть
-    <a href={articleLink} target="_blank" className={styles.source}></a>
 <LuExternalLink size='15px' style={{paddingLeft: 6}}/>
+</a>
 </Button>
    </div>
     )

@@ -56,12 +56,19 @@ font-size: 14px;
 
 .source {
     text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    display: flex;
+    cursor: pointer;
+    font-weight: var(--font-weight-normal);
+}
+
+.magazine {
     color: var(--accent-color);
     font-family: var(--font-family-base);
     padding-right: 8px;
-    width: fit-content;
+    display: flex;
 }
-
 .data {
     color: var(--third-text-color);
     font-family: var(--font-family-base);
