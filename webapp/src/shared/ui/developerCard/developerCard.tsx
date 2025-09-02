@@ -34,12 +34,12 @@ export const DeveloperCard = ({
         ))}
         </div>
       <div className={styles.developerLinks}>
-        <button>
+        <button className={styles.button}>
       <a href={linkGitHub} className={styles.link} target="_blank">
     <VscGithubAlt size={'23px'} color="#831843"/>
     </a>
     </button>
-    <button>
+    <button className={styles.button}>
     <a href={linkTg} className={styles.link} target="_blank">
     <PiTelegramLogo size={'23px'} color="#831843" />
     </a>

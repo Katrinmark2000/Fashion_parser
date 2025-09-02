@@ -67,11 +67,12 @@
     gap: 7px;
   }
 
-  button {
+  .button {
     outline: none;
     background: transparent;
     border-radius: 7px;
     border: none;
+    cursor: pointer;
     
     &:hover {
         background-color: var(--hover-color);

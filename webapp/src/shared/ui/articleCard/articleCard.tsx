@@ -32,13 +32,13 @@ export const ArticleCard = ({
 </div>
 <h4 className={styles.title}>{articleTitle}</h4>
 <p className={styles.text}>{articleDescription}</p>
-<a href={articleLink} target="_blank" className={styles.source}>
+</div>
+
 <Button color={"primary"} className={styles.buttonArticle}>
     Открыть
+    <a href={articleLink} target="_blank" className={styles.source}></a>
 <LuExternalLink size='15px' style={{paddingLeft: 6}}/>
 </Button>
-</a>
-</div>
    </div>
     )
     }

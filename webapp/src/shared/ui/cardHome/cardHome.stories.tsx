@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CardHome, type TCardHome } from './cardHome';
+import { CardHome } from './cardHome';
 import { CiAlarmOn } from 'react-icons/ci';
 import '../../../index.scss';
 
