@@ -13,35 +13,3 @@ export default meta;
 
 type Story = StoryObj<typeof DropdownBaseUI>;
 
-export const Default: Story = {
-  args: {
-    placeholder: 'Select option',
-    options: [
-      { value: 'newest', text: 'Newest' },
-      { value: 'oldest', text: 'Oldest' },
-    ],
-    defaultValue: undefined, // ничего не выбрано, показывается placeholder
-  },
-};
-
-export const WithFirstSelected: Story = {
-  args: {
-    placeholder: 'Select option',
-    options: [
-      { value: 'newest', text: 'Newest' },
-      { value: 'oldest', text: 'Oldest' },
-    ],
-    defaultValue: "first", // сразу выбирается первый элемент
-  },
-};
-
-export const WithCustomDefault: Story = {
-  args: {
-    placeholder: 'Select option',
-    options: [
-      { value: 'newest', text: 'Newest' },
-      { value: 'oldest', text: 'Oldest' },
-    ],
-    defaultValue: "oldest", // выбирается конкретный элемент
-  },
-};

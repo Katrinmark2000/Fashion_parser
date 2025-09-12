@@ -1,5 +1,5 @@
 .container {
-    display: inline-block;
+    display: flex;
     position: relative;
     font-family: inherit;
   }
@@ -31,28 +31,8 @@
   .dropdownList {
     position: absolute;
     top: calc(100% + 4px);
-    left: 0;
-    width: 100%;
-    background: white;
-    border-radius: 10px;
+    z-index: 10;
     overflow: hidden;
-    border: 1px solid pink;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .optionItem {
-    font-family: var(--font-family-base);
-    padding: 8px 12px;
-    font-size: 14px;
-    color: var(--text-color);
-  
-    &:hover {
-      background: var(--hover-color); // подсветка при наведении
-    }
-  }
-  
-  .selected {
-    background: var(--hover-color); // фон выделенного
   }
   
   .placeholder {

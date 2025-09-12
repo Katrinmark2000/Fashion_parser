@@ -8,16 +8,19 @@ import { useDispatch, useSelector, type RootState } from '../../store';
 import { fetchArticle } from '../../entities/slice/articleSlice';
 import { formatDate } from "../../shared/utils/formatData";
 import { stripHtml } from "../../shared/utils/stripHtml";
+import { FilterBar } from "../../shared/ui/filterBar/filterBar";
+import { useArticleFilters } from '../../features/articleFilter/articleFilter';
 
 const INITIAL_LIMIT = 6;
 const LOAD_MORE_STEP = 9;
-const MIN_LIMIT = 6;
 
 
 export const ArticlesSection = () => {
 
  const dispatch = useDispatch();
-  const article = useSelector((state: RootState) => state.article.items);
+  const articles = useSelector((state: RootState) => state.article.items);
+  const sectionRef = useRef<HTMLElement>(null);
+
   const [limit, setLimit] = useState(() => {
     // При инициализации пытаемся взять limit из localStorage
     const saved = localStorage.getItem("articlesLimit");
@@ -34,15 +37,26 @@ export const ArticlesSection = () => {
   dispatch(fetchArticle(limit));
   }, [dispatch, limit]);
 
+  console.log("Articles from store:", articles);
+  //используем готовый хук для фильтрации
+  const {
+    magazines,
+    selectedMagazine,
+    setSelectedMagazine,
+    selectedDate,
+    setSelectedDate,
+    filteredArticles,
+  } = useArticleFilters(articles);
+
+  
+
 const handleLoadMore = () => {
   setLimit((prev) => prev + LOAD_MORE_STEP); // увеличиваем лимит
 };
 
 const handleClose = () => {
-  setLimit(MIN_LIMIT); // сброс обратно до 6 статей
+  setLimit(INITIAL_LIMIT); // сброс обратно до 6 статей
   sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });};
-
-const sectionRef = useRef<HTMLElement>(null);
 
 
     return (
@@ -54,9 +68,17 @@ const sectionRef = useRef<HTMLElement>(null);
       <h2 className={styles.title}>Модный контент</h2>
       <p className={styles.text}>Наш парсер постоянно сканирует ведущие модные журналы, чтобы предоставить вам самый релевантный и актуальный контент.</p>
       </div>
+      <FilterBar
+        magazines={magazines}
+        selectedMagazine={selectedMagazine}
+        onSelectMagazine={setSelectedMagazine}
+        selectedDate={selectedDate}
+        onSelectDate={setSelectedDate}
+      />
       <div className={styles.articles} >
-      {article.slice(0, limit).map((article) => (
+      {filteredArticles.slice(0, limit).map((article, index) => (
           <ArticleCard
+            key={`${article.id}-${index}`}
             id={Number(article.id)}
             articleImage={article.image}
             articleTitle={article.title}

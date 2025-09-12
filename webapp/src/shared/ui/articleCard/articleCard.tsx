@@ -1,7 +1,7 @@
 import type { TArticleCard } from "./type";
 import styles from './articleCard.module.scss'
 import {Button} from '../button/button'
-import { getDomainName } from "../../../features/getDomainName/getDomainName";
+import { getDomainName } from "../../utils/getDomainName";
 import { CiCalendar } from "react-icons/ci";
 import { LuExternalLink } from "react-icons/lu";
 import { useState } from "react";
